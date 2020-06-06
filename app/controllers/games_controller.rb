@@ -27,8 +27,7 @@ class GamesController < ApplicationController
     render json: @game
     # binding.pry
   end 
-  
-  
+
   private 
 
   def game_params 
@@ -38,5 +37,4 @@ class GamesController < ApplicationController
   def set_game 
     game = Game.find(params[:id])
   end 
-  
 end
