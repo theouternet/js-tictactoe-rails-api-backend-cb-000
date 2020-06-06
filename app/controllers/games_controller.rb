@@ -1,3 +1,5 @@
+ class GamesController < ApplicationController 
+
  def create
     @game = Game.create(state: ["X", "", "", "", "", "", "", "", ""])
     render json: @game, status: 201
